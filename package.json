@@ -1,0 +1,11 @@
+{
+  "name": "md-preview",
+  "version": "1.0.0",
+  "description": "Markdown 即時預覽 + PDF 匯出",
+  "scripts": {
+    "deploy": "wrangler pages deploy . --project-name=md-preview"
+  },
+  "devDependencies": {
+    "wrangler": "^3"
+  }
+}
