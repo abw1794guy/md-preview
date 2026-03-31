@@ -3,10 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MD Preview</title>
+
+  <!-- ── Primary SEO ── -->
+  <title>MD Preview｜Markdown 即時預覽編輯器</title>
+  <meta name="description" content="免安裝的線上 Markdown 編輯器，左右對照即時預覽、匯出 PDF、主題切換、捲軸同步，支援 .md 檔匯入，內容自動儲存於瀏覽器。" />
+  <meta name="keywords" content="Markdown, 編輯器, 預覽, PDF匯出, 即時預覽, Markdown editor, online, preview, export PDF" />
+  <meta name="author" content="MD Preview" />
+  <link rel="canonical" href="https://md-preview.pages.dev/" />
+
+  <!-- ── Open Graph（Facebook / LINE / 社群分享） ── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://md-preview.pages.dev/" />
+  <meta property="og:title"       content="MD Preview｜Markdown 即時預覽編輯器" />
+  <meta property="og:description" content="免安裝的線上 Markdown 編輯器，左右對照即時預覽、匯出 PDF、主題切換、捲軸同步，支援 .md 檔匯入。" />
+  <meta property="og:image"       content="https://md-preview.pages.dev/og-image.png" />
+  <meta property="og:locale"      content="zh_TW" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:url"         content="https://md-preview.pages.dev/" />
+  <meta name="twitter:title"       content="MD Preview｜Markdown 即時預覽編輯器" />
+  <meta name="twitter:description" content="免安裝的線上 Markdown 編輯器，左右對照即時預覽、匯出 PDF、主題切換。" />
+  <meta name="twitter:image"       content="https://md-preview.pages.dev/og-image.png" />
+
+  <!-- ── PWA / 瀏覽器 ── -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="apple-touch-icon" href="favicon.svg" />
   <meta name="theme-color" content="#1a2332" />
+  <meta name="application-name" content="MD Preview" />
+  <meta name="robots" content="index, follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -80,6 +106,31 @@
       <div id="preview" class="preview markdown-body"></div>
     </section>
   </main>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "MD Preview",
+    "alternateName": "Markdown 即時預覽編輯器",
+    "url": "https://md-preview.pages.dev/",
+    "description": "免安裝的線上 Markdown 編輯器，左右對照即時預覽、匯出 PDF、主題切換、捲軸同步，支援 .md 檔匯入，內容自動儲存於瀏覽器。",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TWD" },
+    "inLanguage": ["zh-Hant", "en"],
+    "featureList": [
+      "即時 Markdown 預覽",
+      "匯出 PDF",
+      "主題切換（深色 / 淺色）",
+      "捲軸同步",
+      "版面切換",
+      "匯入 .md 檔",
+      "繁中 / English 介面"
+    ]
+  }
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.8/dist/purify.min.js"></script>
